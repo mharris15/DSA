@@ -6,8 +6,8 @@
          *  Time Complexity of Insertion Sort
          *
          *  Best case: O(n) , If the list is already sorted, where n is the number of elements in the list.
-         *  Average case: O(n 2 ) , If the list is randomly ordered
-         *  Worst case: O(n 2 ) , If the list is in reverse order 
+         *  Average case: O(n^2 ) , If the list is randomly ordered
+         *  Worst case: O(n^2 ) , If the list is in reverse order 
          */
 
         /*
