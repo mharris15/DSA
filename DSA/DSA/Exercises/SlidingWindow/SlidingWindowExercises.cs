@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA.Exercises.SlidingWindow
 {
-    public class SlidingWindowExcercises
+    public class SlidingWindowExercises
     {
         /// <summary>
         /// Determines if the array contains duplicate elements within a given distance.

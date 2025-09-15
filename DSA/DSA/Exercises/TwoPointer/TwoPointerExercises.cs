@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA.Exercises.TwoPointer
 {
-    public class TwoPointerExcercises
+    public class TwoPointerExercises
     {
         /// <summary>
         /// Reverses the given character array in-place.
