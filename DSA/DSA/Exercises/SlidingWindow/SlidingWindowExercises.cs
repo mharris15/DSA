@@ -38,5 +38,34 @@ namespace DSA.Exercises.SlidingWindow
             }
             return false;
         }
+
+        /// <summary>
+        /// Given an array of stock prices where prices[i] is the price on day i,
+        /// this method finds the maximum profit achievable by choosing a single
+        /// day to buy and a later day to sell.
+        /// </summary>
+        /// <param name="prices">Array of stock prices by day</param>
+        /// <returns>
+        /// Maximum profit from one transaction (buy once, sell once). 
+        /// Returns 0 if no profit is possible.
+        /// </returns>
+        public int MaxProfit(int[] prices)
+        {
+            var minPrice = int.MaxValue;
+            var maxProfit = 0;
+
+            foreach (var price in prices)
+            {
+                if (price < minPrice)
+                {
+                    minPrice = price;
+                }
+                else if (price - minPrice > maxProfit)
+                {
+                    maxProfit = price - minPrice;
+                }
+            }
+            return maxProfit;
+        }
     }
 }
